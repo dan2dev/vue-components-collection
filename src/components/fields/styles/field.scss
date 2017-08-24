@@ -1,0 +1,28 @@
+.vc-field {
+    display: block;
+    padding: 15px 15px;
+    // background-color: #f0f0f0;
+    box-sizing: border-box;
+    // min-height: 80px;
+    position: relative;
+    &--grouped {
+        padding: 0 0;
+    }
+    &__content {
+        display: block;
+        width: 100%;
+        min-height: 50px;
+        // margin-bottom: 20px;
+        position: relative;
+    }
+    &__errors {
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+        position: relative;
+
+    }
+}
+.vc-field-group {
+    padding: 15px 15px;
+}

@@ -1,15 +1,14 @@
 {
-	
 	"compilerOptions": {
-		"outDir": "./dist/",
+		"outDir": "./dist/js/",
 		"sourceMap": true,
 		"noImplicitAny": true,
 		"module": "es2015",
 		"target": "es5",
     	"moduleResolution": "node",
 		"skipLibCheck": true,
-		"jsx": "react",
-		"allowJs": false,
+		"jsx": "react", 
+		"allowJs": true,
 		"allowSyntheticDefaultImports": true,
 		"experimentalDecorators": true,
 		"lib": [
@@ -25,7 +24,9 @@
 			"es5",
 			"es6"
 		],
-		"types": [ ]
+		"types": [
+			"vue-typescript-import-dts"
+		]
 	},
 	"compileOnSave": false,
 	"exclude": [
@@ -38,6 +39,6 @@
 		"tsdist"
 	],
 	"include": [
-		"./**/*"
+		"src/**/*"
 	]
 }

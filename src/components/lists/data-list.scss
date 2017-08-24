@@ -1,0 +1,10 @@
+@import '../../main.scss';
+
+.vc-data-list {
+	display: block;
+	padding: 15px;
+	&__content {
+		border: 1px solid $input-border-color;
+		background-color: $input-background;
+	}
+}

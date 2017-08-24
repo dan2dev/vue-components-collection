@@ -1,0 +1,50 @@
+@import "../../../main.scss";
+
+.vc-button {
+	display: block;
+	&__holder {
+		display: block;
+	}
+	&__button {
+        display: block;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        box-sizing: border-box;
+        width: 100%;
+        // padding: 23px 15px 10px 15px;
+        padding: 15px 15px 15px 15px; 
+        font-size: 18px;
+        line-height: 28px;
+        // height: 60px;
+        border: 1px solid $button-border-color; 
+        background: $button-background;
+        -webkit-transition: transform 0.1s ease, border-color 0.3s ease;
+        transition: box-shadow 0.1s ease, border-color 0.3s ease;
+        color: $text-color-strong;
+		font-weight: normal;
+		color: $button-text-color;
+        font-family: $font;
+		
+		cursor: pointer;
+		-webkit-appearance:none;
+		appearance: none;
+
+		background: $button-background;
+
+		// box-shadow:  rgba(0, 0, 0, 0.16) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+		&:hover {
+			box-shadow:  rgba(0, 0, 0, 0.16) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+			// transform: translateY(-1px);
+			// border-color: $button-border-color-hover;
+		}
+		&:active {
+			// transform: translateY(1px);
+			box-shadow: none;
+		}
+		&:active, &:focus {
+			background: $button-background-pressed;
+		}
+		
+	}
+}

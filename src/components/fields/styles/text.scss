@@ -1,0 +1,94 @@
+@import '../../../main.scss';
+
+.vc-text {
+    display: flex;
+    flex-flow: column;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 80px;
+    font-family: $font;
+
+    &__input {    
+        display: block;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 23px 15px 10px 15px;
+        font-size: 18px;
+        line-height: 22px;
+        height: 60px;
+        border: 1px solid $input-border-color; 
+        background: $input-background;
+        font-family: $font;
+        -webkit-transition: transform 0.3s ease, border-color 0.3s ease;
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        color: $text-color-strong;
+        
+
+        &:hover {
+            border-color: $input-border-color-hover; 
+        }
+        &:focus {
+            // box-shadow: rgba(0,0,0,0.2) 0px 1px 1px,rgba(0,0,0,0.1) 0px 2px 8px ;
+            box-shadow:  rgba(0, 0, 0, 0.16) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            border-color: $input-border-color-focus;
+            background-color: $input-background-focus;
+        }
+        &:focus ~ .vc-text__label, &:valid ~ .vc-text__label {
+            -webkit-transform: translate(0, -12px) scale(0.75);
+            transform: translate(0, -12px) scale(0.75);
+        }
+        &:valid ~ .vc-text__label, &:hover ~ .vc-text__label {
+            color: $text-label-color-filled;
+        }
+
+        &--grouped {
+            // border-width: 0;
+            // border-bottom: 1px solid $input-border-color;
+            box-shadow: none;
+            margin-bottom: -1px;
+            margin-right: -1px;
+            &:hover {
+                z-index: 1;
+            }
+            &:focus {
+                z-index: 2;
+                box-shadow: none;
+            }
+        }
+
+
+
+    }
+    &__label {
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        pointer-events: none; 
+        user-select: none;
+        font-size: 18px;
+        top: 20px;
+        left: 16px;
+        color: $text-label-color;
+        font-family: $font; 
+        // -----------------------
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+        // -----------------------
+        -webkit-transform-origin: left top;
+        transform-origin:left top;
+        -webkit-transition: transform 0.2s ease, color 0.5s linear;
+        transition: transform 0.2s ease, color 0.5s linear;
+    }
+
+}

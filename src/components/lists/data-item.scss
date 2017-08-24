@@ -1,0 +1,32 @@
+$font: Helvetica, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+
+.vc-data-item {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	vertical-align: middle;
+	align-items: center;
+	border-top: 1px solid rgba(0,0,0,0.05);
+	&:hover {
+		background-color: rgba(0,0,0,0.03);
+		border-top-color: rgba(0,0,0,0);
+	}
+	&__start, &__content, &__end {
+		padding: 16px;
+        font-size: 16px;
+		line-height: 22px;
+		font-family: $font;
+	}
+	&__start {
+		
+	}
+	&__content {
+		flex-grow: 1;
+	}
+	&__end {
+
+	}
+	&:first-child {
+		border-top-color: rgba(0,0,0,0);
+	}
+}

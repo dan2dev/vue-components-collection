@@ -1,8 +1,8 @@
 {
   "name": "vue-components-collection",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,14 +16,29 @@
     "url": "https://github.com/dan2dev/vue-components-collection/issues"
   },
   "homepage": "https://github.com/dan2dev/vue-components-collection#readme",
+  "types": "./@types/main.d.ts",
   "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^3.0.0",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
     "source-map-loader": "^0.2.1",
+    "style-loader": "^0.18.2",
     "uglifyjs-webpack-plugin": "^0.4.6",
+    "vue-loader": "^13.0.4",
+    "vue-template-compiler": "^2.4.2",
+    "vue-typescript-import-dts": "^3.1.1",
     "webpack": "^3.5.4",
     "webpack-livereload-plugin": "^0.11.0"
   },
   "dependencies": {
-    "vue": "^2.4.2"
+    "element-ui": "^1.4.2",
+    "vue": "^2.4.2",
+    "vue-class-component": "^5.0.2",
+    "vuetify": "^0.14.11"
   }
 }
