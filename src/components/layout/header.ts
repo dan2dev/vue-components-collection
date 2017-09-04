@@ -2,7 +2,7 @@ import Vue, { ComponentOptions } from 'vue';
 import Component from 'vue-class-component';
 // -----------------------------------------
 declare var require: any;
-require("./styles/layout-header.scss");
+require("./styles/header.scss");
 // -----------------------------------------
 @Component({
 	template: `
@@ -16,7 +16,5 @@ require("./styles/layout-header.scss");
 		value: String
 	}
 })
-export class LayoutHeader extends Vue {
-
-}
-Vue.component("vc-layout-header", LayoutHeader);
+export class LayoutHeader extends Vue { }
+Vue.component("vc-layout-header", LayoutHeader); 

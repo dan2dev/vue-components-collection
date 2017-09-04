@@ -1,0 +1,29 @@
+.vc-side-nav {
+	position: fixed;
+	width: 80px;
+	background-color: #f0f0f0;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: block;
+	z-index: 2;
+
+	box-shadow: 0 0 2px 1px rgba(0,0,0,0.3);
+
+	&__main-top {
+		display: block;
+		height: 60px;
+		// border-bottom: 1px solid rgba(0,0,0,0.1);
+		box-sizing: border-box;
+	}
+	&__main-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__main-list-item {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}

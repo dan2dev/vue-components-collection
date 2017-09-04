@@ -2,24 +2,30 @@
 $color-accent: #3498db;
 $color-error: #c0392b;
 $color-right: #27ae60;
+
+// text color --------------------
 $text-color-strong: #000;
 $text-color-weak: rgba(0,0,0,0.75);
 $text-color-weaker: rgba(0,0,0,0.25);
-
+// label --------------------
 $text-label-color: rgba(0,0,0,0.50);
 $text-label-color-filled: rgba(0,0,0,0.25);
-
+// input --------------------
 $input-background: rgba(255,255,255,0.5);
 $input-border-color:  rgba(0,0,0,0.1);
 $input-border-color-hover:  rgba(0,0,0,0.2);
 $input-background-focus: rgba(255,255,255,1);
 $input-border-color-focus:  $color-accent; 
-
+// button --------------------
 $button-text-color: rgba(0,0,0,0.75);
 $button-border-color:  rgba(0,0,0,0.2); 
 $button-border-color-hover:  rgba(0,0,0,0.2);
 $button-background: linear-gradient( rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.03) 100%);
 $button-background-pressed: linear-gradient( rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%);
+// --------------------
+
+
+
 
 /* Layout header ------------------- */
 $layout-header-background: linear-gradient( hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 100%);

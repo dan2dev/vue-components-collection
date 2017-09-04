@@ -1,0 +1,31 @@
+.vc-auth-login1 {
+	& > .vc-modal {
+		width: 360px;
+		max-width: 100%; 
+	}
+	&__logo1 {
+		position: relative;
+		display: block;
+		height: 120px;
+		margin: 20px auto;
+	}
+	&__esqueci1 {
+		display: block;
+		text-align: center;
+		padding: 15px;
+
+		&-link1 {
+			display: inline-block;
+			vertical-align: middle;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			color: rgba(0,0,0,0.75);
+			text-decoration: none;
+
+			&:hover {
+				color: #2980b9;
+				text-decoration: underline;
+			}
+		}
+	}
+}
