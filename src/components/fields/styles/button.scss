@@ -47,4 +47,15 @@
 		}
 		
 	}
+	&__button-label {
+
+	}
+	&__button-loader {
+		position: absolute;
+		height: 30px;
+		width: 30px;
+		left: 15px;
+		top: 15px;
+		margin: 0 auto;
+	}
 }

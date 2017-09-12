@@ -1,3 +1,17 @@
+
+import Vue, { ComponentOptions } from 'vue';
+import vueCustomElement from 'vue-custom-element';
+Vue.use(vueCustomElement);
+
+
+// require ---------------
+declare var require: any;
+require("./main.scss");
+// console.log("entry");
+
+// custom element polifill
+import 'document-register-element/build/document-register-element';
+
 // require('./window/index');
 
 // fields --------------------------
@@ -13,23 +27,22 @@ import "./components/lists/data-list.ts";
 import "./components/lists/data-item.ts";  
 
 // headers -------------------------
-import "./components/layout/header.ts";  
+import "./components/layout/header.ts";
 import "./components/layout/header-login.ts";
 
-
 // nav ------------------------------
-import "./components/navigation/side-nav.ts"; 
-
+// import "./components/navigation/side-nav.ts"; 
 
 // auth ---------------------------------
-import "./components/auth/login1.ts";
+import "./components/auth/login1.ts"; 
 
-// ----------------------------------
+// -----------------------------------------------------------------
 
-// require ---------------
-declare var require: any;
-require("./main.scss");
-console.log("entry");
+// testing components 
+import "./teste.ts";
+
+
+
 
 
 // import Vue from "vue";
@@ -45,8 +58,9 @@ export module VueComponentsCollection {
     }
 }
 
-VueComponentsCollection.init();
+VueComponentsCollection.init(); 
+export default VueComponentsCollection;
 
-// export default VueComponentsCollection;
+// components -------------------------------------
 
-// components ------------------------
+

@@ -1,4 +1,15 @@
 .vc-auth-login1 {
+	/*
+	& .fade-enter-active, & .fade-leave-active {
+		transition: opacity 2000ms;
+	}
+	& .fade-enter, & .fade-leave-to {
+		opacity: 0;
+	}
+	height: auto;
+	transition: height 2s;
+*/
+
 	& > .vc-modal {
 		width: 360px;
 		max-width: 100%; 
@@ -8,6 +19,12 @@
 		display: block;
 		height: 120px;
 		margin: 20px auto;
+	}
+
+	&__loading1 {
+		display: block;
+		margin: 0 auto;
+		height: 40px;
 	}
 	&__esqueci1 {
 		display: block;
